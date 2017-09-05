@@ -6,7 +6,7 @@ class CoffeeStory extends CoffeeChap
         super
     
     story1: ->
-        alert "momoken is god"
+        #alert "momoken is god"
 
 class CoffeeAct extends CoffeeStory
     constructor: ->
