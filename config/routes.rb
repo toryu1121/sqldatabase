@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   #get 'top/index'
   root to: "top#index"
+  #get "top/index"
+  post "blocks/create"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

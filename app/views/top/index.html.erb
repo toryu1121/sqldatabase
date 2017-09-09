@@ -1,2 +1,14 @@
 <h1>Top#index</h1>
 <p>Find me in app/views/top/index.html.erb</p>
+
+<p>この下に表示されるはず</p>
+<% @blocks.each do |block| %>
+  <tr>
+      <td><%= block.text %></td>
+  <tr>
+<% end %>
+
+
+<div id="btn">
+  <input type="button" id="btn" value="レコード">
+</div>
