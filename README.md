@@ -5,3 +5,4 @@
 * test5: set a SQL Database
 * test6: scaffold destroy
 * test7: ajax test
+* test8: destroy
