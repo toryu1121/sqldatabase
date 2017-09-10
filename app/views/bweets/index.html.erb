@@ -1,0 +1,23 @@
+<h1>Bweets#index</h1>
+<p>Find me in app/views/bweets/index.html.erb</p>
+
+<div id='wrap'>
+  <div id='sideWrap'>
+    <%= form_tag( { action: :create }, { remote: true } ) do %>
+　　<fieldset>
+  　　<legend>Bweet</legend>
+  　　<div><%= text_area_tag :description%></div>
+  　　<div><%= submit_tag :Bweet %></div>
+　　</fieldset>
+　　<% end %>
+  </div><!-- /sideWrap -->
+  <div id='mainWrap'>
+    <h1>BweetsList</h1>
+    <% @bweets.each do |bweet| %>
+      <fieldset>
+        <legend><%= bweet.created_at %></legend>
+        <p><%= bweet.description %></p>
+      </fieldset>
+    <% end %>
+  </div><!-- /mainWrap -->
+</div><!-- /wrap -->
