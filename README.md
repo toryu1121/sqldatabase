@@ -7,3 +7,4 @@
 * test7: ajax test
 * test8: destroy
 * test9: ajax test2
+* test10: ajax test3 "succes a post"

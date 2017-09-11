@@ -10,7 +10,23 @@
   　　<div><%= submit_tag :Bweet %></div>
 　　</fieldset>
 　　<% end %>
+　　
+　　<%= form_tag( { action: :create2 }, { remote: true } ) do %>
+　　<fieldset>
+  　　<legend>crate2のテスト</legend>
+  　　<div><%= text_area_tag :description%></div>
+  　　<div><%= submit_tag :test %></div>
+　　</fieldset>
+　　<% end %>
+　　
+　　
+　　<div id="btn">
+      <input type="button" id="btn" value="レコード">
+    </div>
+
+
   </div><!-- /sideWrap -->
+  
   <div id='mainWrap'>
     <h1>BweetsList</h1>
     <% @bweets.each do |bweet| %>

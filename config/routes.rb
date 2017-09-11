@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   root :to => 'bweets#index'
   get "bweets/index"
   post "bweets/create"
+  post "bweets/create2"
   
   #get 'bweets/index'
 
