@@ -1,2 +1,20 @@
-<h1>Test15#index</h1>
-<p>Find me in app/views/test15/index.html.erb</p>
+<div id="title">
+    <h1>Test15#index</h1>
+</div>
+
+<div id="text">
+    <p>Find me in app/views/test15/index.html.erb</p>
+    </br>
+</div>
+
+<div id="btn">
+    <input type="button" id="btn" value="取得" />
+</div>
+
+<h1>Test15_List</h1>
+<% @test15_list.each do |test15| %>
+    <fieldset>
+        <legend><%= test15.created_at %></legend>
+        <p><%== test15.test15_text %></p>
+    </fieldset>
+<% end %>
