@@ -11,14 +11,48 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170905112921) do
+ActiveRecord::Schema.define(version: 20170916121809) do
 
-  create_table "blogs", force: :cascade do |t|
-    t.string   "title"
-    t.date     "day"
+  create_table "blocks", force: :cascade do |t|
     t.string   "text"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "bweets", force: :cascade do |t|
+    t.text     "description"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  create_table "test11s", force: :cascade do |t|
+    t.text     "test11_text"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  create_table "test12_models", force: :cascade do |t|
+    t.text     "test12_text"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  create_table "test12s", force: :cascade do |t|
+    t.text     "test12_text"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  create_table "test13s", force: :cascade do |t|
+    t.text     "test13_text"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  create_table "test15s", force: :cascade do |t|
+    t.text     "test15_text"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
 end
