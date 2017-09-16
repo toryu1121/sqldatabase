@@ -11,7 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20170916121809) do
+=======
+ActiveRecord::Schema.define(version: 20170910154626) do
+>>>>>>> refs/remotes/origin/master
 
   create_table "blocks", force: :cascade do |t|
     t.string   "text"
@@ -25,6 +29,7 @@ ActiveRecord::Schema.define(version: 20170916121809) do
     t.datetime "updated_at",  null: false
   end
 
+<<<<<<< HEAD
   create_table "test11s", force: :cascade do |t|
     t.text     "test11_text"
     t.datetime "created_at",  null: false
@@ -55,4 +60,6 @@ ActiveRecord::Schema.define(version: 20170916121809) do
     t.datetime "updated_at",  null: false
   end
 
+=======
+>>>>>>> refs/remotes/origin/master
 end

@@ -1,10 +1,26 @@
 Rails.application.routes.draw do
+<<<<<<< HEAD
   get 'test15/index'
 
   post 'test15/create'
 
   #get 'top/index'
   root to: "test15#index"
+=======
+  root :to => 'bweets#index'
+  get "bweets/index"
+  post "bweets/create"
+  post "bweets/create2"
+  
+  #get 'bweets/index'
+
+  #get 'bweets/create'
+
+  #get 'top/index'
+  #root to: "top#index"
+  #get "top/index"
+  #post "blocks/create"
+>>>>>>> refs/remotes/origin/master
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
